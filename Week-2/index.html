@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!--This doc is HTML5-->
+<html lang="en"> <!--Language of the page in this case, English-->
+<head>
+    <meta charset="UTF-8"> <!--UTF= Unified Text Format / Standard set of symbols / # of bits-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Gets device screen size | Responsive website-->
+    <title>Week2</title>
+    <!--We can put search engine optimizaton here | Meta information | 'robots' > meta name="robots" contents-->
+    <meta name="descripton" content="description of the web page.">
+    <link rel="stylesheet" href="CSS/style.css"> <!-- ../ goes to parent folder | href="../CSS/style.css"-->
+
+    <!--Embedded styling is good when you want all the blocks to be styled the same-->
+    <style> 
+        h2{
+            color:brown;
+            border:1px solid burlywood;
+        }
+        h1{
+            color:orange;
+            border:1px solid violet;
+        }
+    </style>
+</head>
+
+<!--There are 3 types of styling:
+Inline styling
+Embedded/Internal styling
+External styling -> the preferred method-->
+
+<body>
+    <!--Block container:
+    We can insert text here in these block containers, if the text falls outside of this container it will default to the next possible block container-->
+
+    <h1 style="color:bisque;background-color:black">Test</h1> <!--Inline styled; since this contains a competing styling it will only apply the CSS that isn't already included here.-->
+    <h2>Embedded/Internal Style</h2>
+
+    <h3>External style sheet applied here.</h3>
+    
+    <!--Inline containers-->
+    <em>a test</em> 
+    <strong>bold.</strong>
+
+    <!--Older format that is support but new versions are encouraged-->
+    <b>also bold</b>
+    <i>also italics</i>
+    <u>underline that</u>
+
+    <p>So, in a <u>paragraph</u>, <strong>THIS</strong> is what <em>inline conatiners</em> look like.</p>
+
+    <p>
+        This is just some information from AMD in regards to their 9000 series Ryzen processors: <br>
+        <q cite="https://www.amd.com/en/products/processors/desktops/ryzen.html">Relish in the speed that the world’s most advanced desktop processor can provide. It doesn’t matter if you’re working hard or gaming hard, the AMD Ryzen™ 9950X processor is an absolute powerhouse. High-performance “Zen 5” core technology from AMD is your key to game-changing performance you can trust.</q> <!--q here automatically applies the quotation-->
+    </p>
+
+    <p>We can also do it by using blockquotations</p>
+    <blockquote cite="https://www.amd.com/en/products/processors/desktops/ryzen.html">Relish in the speed that the world’s most advanced desktop processor can provide. It doesn’t matter if you’re working hard or gaming hard, the AMD Ryzen™ 9950X processor is an absolute powerhouse. High-performance “Zen 5” core technology from AMD is your key to game-changing performance you can trust.</blockquote> <!--Makes the quotation its own block-->
+
+    <p>
+        As per <abbr title="World Health Organiation">WHO</abbr>, the pandemic is over but caution regarding COVID is still encouraged. <!--Allows the user to hover over WHO to see the full name of the abbriviation-->
+    </p>
+
+    <p>
+        2<sup>3</sup> = 8 <br> <!--Superscript | exponent-->
+        66<sub>base 10</sub> <!--Subscript-->
+    </p>
+    <p>Enter <kbd>10</kbd> as input following program</p> <!--kbd = Keyboard-->
+    <p>The program below will output <samp>Enter a number</samp></p> <!--samp = sample-->
+<code>
+    <pre> <!--preserves formating as it is presented below-->
+    int main(){
+        <var>int x = 10;</var> <!--works like italics for code-->
+        print f("Enter a number: ");
+        scanf("%d", &x); 
+        
+        return 0;
+    }
+    </pre>
+</code>
+
+</body>
+
+<div>
+    <aside>
+        <h1>AAA</h1>
+        <p>Aside 1 paragraph</p>
+    </aside>
+    <aside>
+        <h2>Double AAA</h2>
+        <p>Aside 2 paragraph</p>
+    </aside>
+</div>
+
+
+
+<footer style="color:bisque;background-color:black">
+    <address> <!--Helps search engines-->
+        <p>
+            123 Romeo St.<br> <!--Break or new line-->
+            Stratford, ON <br>
+            N5A 1A2
+        </p>
+    </address>
+</footer>
+</html>
