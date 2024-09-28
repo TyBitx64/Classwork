@@ -1,0 +1,51 @@
+/*Heirarchy targetting - targetting inner h2*/
+main div h2{ 
+    border:1px solid blue;
+    margin:0px;
+}
+
+/*targetting child h1 when h1 grandchild */
+main > h1 { 
+    border:1px solid green;
+    margin:0px;
+} 
+
+/*Targets class*/
+.pcls{
+    border:1px solid lightseagreen;
+}
+
+/*Targets id*/
+#p3id{
+    border:1px solid orchid;
+}
+
+/**
+Combining Heirarchy - Recommended way to target
+You can target specific like 2, even, or odd
+**/
+footer h3:nth-child(odd){
+    background-color: cornflowerblue;
+}
+
+/* Adjustent child communicator
+h1+h2{
+    border:1px solid goldenrod;
+} */
+
+/**Generic sibling combinator
+    using + instead of ~ is only going to 
+    target the immediate h2 that follows
+**/
+section h1~h2{
+    background-color: goldenrod;
+} 
+
+a[title="test1"]{
+    background-color: aquamarine;
+}
+
+/*Apply the same styling to two different containers*/
+h4, h5{
+    background-color: slateblue;
+}

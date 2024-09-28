@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,a{
+            border:2px solid red;
+        }
+        h1{
+            width:50%;
+            /*display:inline; -> example of converting h1 to becoming an inline*/
+        }
+        a{
+            width:400px; /*inline element width does not work; block element works as it should */
+            padding:50px; /*works horizontally but doesnt push the h1 vertically */
+            margin:10px; /*pushes other links but not above*/
+            display:inline; /*gets the benefit of the push from the conversion below*/
+        }
+        #first{
+            display:inline-block; /*convert to inline block to properly apply width to element*/
+            width: 300px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <h1>H1 -Block ct</h1>
+    <a id="first" href="">link -Inline ct</a>
+    <a href="">link -Inline ct</a>
+    <a href="">link -Inline ct</a>
+</body>
+</html>

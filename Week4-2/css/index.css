@@ -1,0 +1,44 @@
+
+h1{
+    margin:0px;
+    padding:10px
+}
+header{
+    background-color: lightblue;
+}
+nav{
+    background-color: lightcoral;
+}
+main{
+    background-color: lightgreen;
+    width:70%;
+    float:left;
+}
+aside{
+    background-color: plum;
+    width:30%;
+    float: left;
+}
+footer{
+    background-color: lightsalmon;
+    clear: both;
+}
+#divA{
+    background-color: aquamarine;
+    width:30%;
+    float:left
+}
+#divB{
+    background-color: lightslategray;
+    width:50%;
+    float:left;
+}
+#divC{
+    background-color: goldenrod;
+    width:20%;
+    float:left
+}
+#divD{
+    background-color: slateblue;
+    clear:both;
+}

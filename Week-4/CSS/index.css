@@ -1,0 +1,40 @@
+body{
+    width:1200px;
+    /*border:2px solid black;*/
+    margin:100px auto;
+}
+
+main{
+    border:1px solid red;
+}
+h1{
+    border:1px solid blue;
+    /*Margins when set in one line are read
+    clockwise: top, right, bottom, left */
+    margin:20px 20px 40px 100px;
+
+    /*
+    margin-top:40px;
+    margin-right:100px;
+    margin-bottom:200px;
+    margin-left:20px;
+
+    Remember: Margin outside; Padding inside
+    */
+
+    /*
+        1200px= LeftBorderMain(1px) + RightBorderMain(1px) = 100px
+        1200px - 2px - 200px - 2px = Content width
+    */    
+}
+aside{
+    border:1px solid green;
+    padding: 20px 50px 20px 50px;
+    margin-top: 100px;
+}  
+h2{
+    border:1px solid orange;
+    /*Padding gets read the same way as margins */
+    padding: 50px 20px 50px 20px;
+    text-align: center;
+}

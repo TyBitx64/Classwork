@@ -1,0 +1,34 @@
+h1{
+    margin:0px;
+}
+body{
+    margin:auto;
+    width:864px;
+}
+main{
+    background-color: lightblue;
+    width: 800px;
+    border: 2px solid black;
+    padding: 10px;
+    margin:10px;
+    float: left;
+}
+#divA{
+    background-color: salmon;
+    width: 500px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 20px;
+    float: left;
+}
+#divB{
+    background-color: lightseagreen;
+    width:196px;
+    border: 1px solid black;
+    margin: 5px; /*looks different vertically because of difference of margin*/
+    padding: 10px;
+    float: left;
+}
+aside{
+    clear:both;
+}

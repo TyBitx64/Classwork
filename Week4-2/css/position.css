@@ -1,0 +1,38 @@
+h1{
+    margin:0px;
+    padding: 10px;
+}
+/*body is relative by default - body cordinate system*/
+h1:nth-child(1){
+    background-color: aqua;
+    position:static;
+    left:50px;/*nothing happens because it's position is static*/
+}
+h1:nth-child(2){
+    background-color: rgba(255, 0, 0, 50%);
+    position:relative;
+    left:10px; /*applying left means we can't apply right - it pushes from the left 10px*/
+    top:10px; /*applying top means we can't apply bottom - it pushes from the top 10px*/
+    z-index: 1; /*-- helps apply who's on top first to relativev positions */
+}
+h1:nth-child(3){
+    background-color: lightgreen;
+    /*position: relative;*/
+    /*z-index: 99; -- 999max*/
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    left:100px; /*applying left to a fixed position stretches*/
+}
+h1:nth-child(4){
+    background-color: orange;
+    position:absolute; /*fixed but not scrolling*/
+    right: 0px;
+    left: 100px;
+    top:300px;
+}
+h1:nth-child(5){
+    background-color: pink;
+    position: sticky;
+    top:20px; /*scrollable to 20px then goes behind.*/
+}

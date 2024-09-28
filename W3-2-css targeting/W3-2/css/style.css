@@ -1,0 +1,37 @@
+/*targeting inner h2*/
+main div h2{
+    border:1px solid green;
+    margin:0px;
+}
+
+/*targeting child h1 when h1 grandchildren exist*/
+main > h1{
+    border:1px solid red;
+    margin:0px;
+}
+.pcls{
+    background-color: cornflowerblue;
+}
+#p3id{
+    background-color:chartreuse;
+}
+
+footer h3:nth-child(2){/*Work with even & odd as well*/
+    background-color: blueviolet;
+}
+
+/*generic Sibling combinator*/
+/*Using + instead of ~ is only going
+to taget the immediate h2 that follows h1*/
+
+h1~h2{
+   background-color: pink;
+}
+
+a[title="test1"]{
+    background-color: aquamarine;
+}
+
+h4, h5{
+    background-color: orange;
+}
